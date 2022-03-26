@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 		resize: none;
 	}
 	.AppWrapper{
+		height: 100vh;
 		background-color: #E5E5E5;
 	}
 `
@@ -39,6 +40,10 @@ export const Title = styled.h1`
 	${({small}) => small && css`
 		font-weight: normal;
 		font-size: 16px;
+	`}
+	${({large}) => large && css`
+		font-weight: 700;
+		font-size: 26px;
 	`}
 `
 export const Container = styled.div`

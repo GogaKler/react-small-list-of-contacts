@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { connect } from "react-redux";
 import Sidebar from "./components/Sidebar";
 import { Container, FlexCol, FlexContainer } from "./componentsStyled/Global";

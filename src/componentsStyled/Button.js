@@ -14,6 +14,7 @@ export const Button = styled.button`
 	transition: 0.40s ease-out;
 	cursor: pointer;
 	align-self: ${({ self }) => self || ''};
+	margin: ${({margin}) => margin || ''};
 
 	${({ transparent }) => transparent && css`
 		background: 0;
@@ -22,5 +23,9 @@ export const Button = styled.button`
 				background-color: #4b50ef75;
 				color: #fff;
 			}
+	`}
+	${({large}) => large && css`
+			padding: 6px 20px;
+			font-size: 16px;
 	`}
 `

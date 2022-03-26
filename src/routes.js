@@ -1,6 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import UsersList from './components/UsersList/UsersList'
-import User from './components/UserProfile/User'
+import User from './components/UserProfile/UserProfile'
 
 
 export const useRoutes = () => {

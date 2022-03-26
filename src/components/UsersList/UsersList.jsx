@@ -13,7 +13,6 @@ let mapStateToProps = (state) => {
 		isFetching: state.users.isFetching
 	}
 }
-
 const ButtonUser = styled(Button)`
  	position: absolute;
  	bottom: 2px;
@@ -23,7 +22,10 @@ const ButtonUser = styled(Button)`
 
 const UsersList = (props) => {
 	const navigate = useNavigate();
-	useEffect(() => { props.getUsersList() }, [])
+	useEffect(() => {
+		const getUsers = () => {props.getUsersList()}
+		getUsers()
+		}, [])
 
 	return (
 		<div className="usersList">
