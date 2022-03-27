@@ -11,20 +11,16 @@ import { useState } from "react";
 
 const User = (props) => {
 	const [editMode, setEditMode] = useState(true)
-
 	const toggleEditMode = () => {
 		editMode ? setEditMode(false) : setEditMode(true)
 	}
-
 	const navigate = useNavigate();
 	let params = useParams();
-	let userId = params.id
+	const userId = params.id
+
 	useEffect(() => {
-		function getUser(userId){
-			props.getUser(userId)
-		}	
-		getUser(userId);
-	}, [])
+		props.getUser(userId)
+	}, [userId])
 
 	return (
 		<div className="userProfile">

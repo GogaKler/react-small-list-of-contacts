@@ -7,12 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { getUsersList } from "../../thunks/thunks";
 
-let mapStateToProps = (state) => {
-	return {
-		usersList: state.users.usersList,
-		isFetching: state.users.isFetching
-	}
-}
+
 const ButtonUser = styled(Button)`
  	position: absolute;
  	bottom: 2px;
@@ -22,11 +17,13 @@ const ButtonUser = styled(Button)`
 
 const UsersList = (props) => {
 	const navigate = useNavigate();
+	const sortByName = props.sortByName
+	const sortByCity = props.sortByCity
 	useEffect(() => {
-		const getUsers = () => {props.getUsersList()}
+		const getUsers = () => {props.getUsersList(sortByName, sortByCity)}
 		getUsers()
-		}, [])
-
+		}, [sortByName, sortByCity])
+		console.log(props)
 	return (
 		<div className="usersList">
 			<Title margin='0 0 10px 0'>Список пользователей</Title>
@@ -44,5 +41,12 @@ const UsersList = (props) => {
 	);
 }
 
-
+let mapStateToProps = (state) => {
+	return {
+		usersList: state.users.usersList,
+		isFetching: state.users.isFetching,
+		sortByName: state.users.sortByName,
+		sortByCity: state.users.sortByCity
+	}
+}
 export default connect(mapStateToProps, {getUsersList})(UsersList);

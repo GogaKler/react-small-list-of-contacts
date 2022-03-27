@@ -23,7 +23,7 @@ const UserForm = (props) => {
 		website: props.user.website,
 		comment: '',
 	}
-	console.log(props.user)
+	console.log(props)
 	return (
 		<div className="userForm">
 			<Formik

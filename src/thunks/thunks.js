@@ -3,10 +3,10 @@ import { preloaderIsFetching, setUsersList, setUser } from "../redux/UsersReduce
 
 
 
-export const getUsersList = () => {
+export const getUsersList = (name, city) => {
 	return (dispatch) => {
 		dispatch(preloaderIsFetching(true))
-		usersApi.getUsersList().then(data => {
+		usersApi.getUsersList(name, city).then(data => {
 			dispatch(preloaderIsFetching(false))
 			dispatch(setUsersList(data))
 		})
