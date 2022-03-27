@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { Button } from "../../componentsStyled/Button";
-import { FlexContainer, Title } from "../../componentsStyled/Global";
+import { Button } from "../../components-style/Button";
+import { FlexContainer, Title } from "../../components-style/Global";
 import { getUser } from "../../thunks/thunks";
 import './UserProfile.scss'
 import UserForm from "./UserForm";

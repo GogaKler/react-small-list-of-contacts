@@ -1,12 +1,13 @@
 import styled from "styled-components/macro";
 import { connect } from "react-redux";
-import { Button } from "../../componentsStyled/Button";
-import { Title } from "../../componentsStyled/Global";
+
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { getUsersList } from "../../thunks/thunks";
 import './UsersList.scss'
 import Preloader from "../Preloader/Preloader";
+import { Title } from "../../components-style/Global";
+import { Button } from './../../components-style/Button';
 
 const ButtonUser = styled(Button)`
  	position: absolute;

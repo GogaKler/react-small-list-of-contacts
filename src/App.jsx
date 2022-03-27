@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
-import { Container, FlexCol, FlexContainer } from "./componentsStyled/Global";
 import { getUsersList } from "./thunks/thunks";
 import { useRoutes } from "./routes";
 import Sidebar from "./components/Sidebar/Sidebar";
+import { Container, FlexCol, FlexContainer } from "./components-style/Global";
 
 
 const App = (props) => {

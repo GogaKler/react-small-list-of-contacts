@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import * as yup from 'yup'
-import { FlexContainer } from "../../componentsStyled/Global";
-import { Button } from './../../componentsStyled/Button';
+import { FlexContainer } from "../../components-style/Global";
+import { Button } from './../../components-style/Button';
 import './UserForm.scss'
 
 

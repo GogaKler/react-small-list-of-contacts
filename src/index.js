@@ -4,9 +4,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './redux/redux-store'
 import App from './App';
-import { GlobalStyles } from './componentsStyled/Global';
 import './assets/fonts/fonts.scss'
 import './components/Preloader/Preloader.scss'
+import { GlobalStyles } from './components-style/Global';
 
 ReactDOM.render(
 	<BrowserRouter>

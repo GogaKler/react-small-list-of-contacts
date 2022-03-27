@@ -1,5 +1,5 @@
-import { Button } from "../../componentsStyled/Button";
-import { Title } from "../../componentsStyled/Global";
+import { Button } from "../../components-style/Button";
+import { Title } from "../../components-style/Global";
 import { connect } from 'react-redux';
 import { useState } from "react";
 import { useEffect } from "react";
