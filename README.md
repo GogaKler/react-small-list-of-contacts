@@ -1,4 +1,4 @@
-# react-small-list-of-contacts## 
+# react-small-list-of-contacts
 
 
 ## Установка  и запуск
