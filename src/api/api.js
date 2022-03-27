@@ -12,6 +12,7 @@ export const usersApi = {
 		(sortByCity === null ? '' : `?_sort=address.city&_order=${sortByCity}`))
 		.then(response => response.data)
 	},
+	
 	getUser(userId) {
 	return instance.get(`users/${userId}`).then(response => response.data)
 	}

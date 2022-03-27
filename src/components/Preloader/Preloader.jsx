@@ -1,4 +1,4 @@
-import PreloaderGif from '../assets/preloaders/preloaderGIF.gif'
+import PreloaderGif from '../../assets/preloaders/preloaderGIF.gif'
 
 
 const Preloader = (props) => {

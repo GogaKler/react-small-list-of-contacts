@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import Preloader from "../../common/Preloader";
 import { Button } from "../../componentsStyled/Button";
 import { FlexContainer, Title } from "../../componentsStyled/Global";
 import { getUser } from "../../thunks/thunks";
 import './UserProfile.scss'
 import UserForm from "./UserForm";
 import { useState } from "react";
+import Preloader from "../Preloader/Preloader";
 
 const User = (props) => {
 	const [editMode, setEditMode] = useState(true)
