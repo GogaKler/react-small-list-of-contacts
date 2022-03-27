@@ -6,7 +6,7 @@ import { Title } from "../../componentsStyled/Global";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { getUsersList } from "../../thunks/thunks";
-
+import './UsersList.scss'
 
 const ButtonUser = styled(Button)`
  	position: absolute;
@@ -19,11 +19,12 @@ const UsersList = (props) => {
 	const navigate = useNavigate();
 	const sortByName = props.sortByName
 	const sortByCity = props.sortByCity
+
 	useEffect(() => {
 		const getUsers = () => {props.getUsersList(sortByName, sortByCity)}
-		getUsers()
+		getUsers();
 		}, [sortByName, sortByCity])
-		console.log(props)
+
 	return (
 		<div className="usersList">
 			<Title margin='0 0 10px 0'>Список пользователей</Title>

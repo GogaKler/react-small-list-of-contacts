@@ -15,6 +15,10 @@ export const Button = styled.button`
 	cursor: pointer;
 	align-self: ${({ self }) => self || ''};
 	margin: ${({margin}) => margin || ''};
+	&:disabled{
+		color: #fff;
+		background: #AFAFAF;
+	}
 
 	${({ transparent }) => transparent && css`
 		background: 0;
@@ -23,6 +27,15 @@ export const Button = styled.button`
 				background-color: #4b50ef75;
 				color: #fff;
 			}
+	`}
+	${({ green }) => green && css`
+		background: #52CF4F;
+
+	`}
+	${({disabledBlue}) => disabledBlue && css`
+			color: #d5d5d5;
+			background: #6c6c6c;
+			cursor: default;
 	`}
 	${({large}) => large && css`
 			padding: 6px 20px;

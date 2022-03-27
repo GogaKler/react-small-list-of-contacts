@@ -1,5 +1,5 @@
 import { usersApi } from "../api/api"
-import { preloaderIsFetching, setUsersList, setUser } from "../redux/UsersReducer"
+import { preloaderIsFetching, setUsersList, setUser } from "../redux/users-reducer"
 
 
 

@@ -1,4 +1,7 @@
 .userForm{
+	border: 2px solid #F3F3F3;
+	border-radius: 8px;
+	padding: 15px;
 	&__error{
 		color: red;
 	}

@@ -2,7 +2,6 @@ import { css } from 'styled-components'
 import styled, { createGlobalStyle }  from 'styled-components/macro'
 
 export const GlobalStyles = createGlobalStyle`
-
 	*{
 		margin: 0;
 		padding: 0;
@@ -32,18 +31,19 @@ export const GlobalStyles = createGlobalStyle`
 	}
 `
 
+/// components
 export const Title = styled.h1`
 	font-weight: 700;
 	font-size: 20px;
 	margin: ${({margin}) => margin || 0 };
 
 	${({small}) => small && css`
-		font-weight: normal;
 		font-size: 16px;
+		font-weight: normal;
 	`}
 	${({large}) => large && css`
+	font-size: 26px;
 		font-weight: 700;
-		font-size: 26px;
 	`}
 `
 export const Container = styled.div`

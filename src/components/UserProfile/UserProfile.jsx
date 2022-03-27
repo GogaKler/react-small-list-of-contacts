@@ -18,8 +18,12 @@ const User = (props) => {
 	let params = useParams();
 	const userId = params.id
 
+
 	useEffect(() => {
-		props.getUser(userId)
+		const getUserFunc = () => {
+			props.getUser(userId)
+		}
+		getUserFunc();
 	}, [userId])
 
 	return (
